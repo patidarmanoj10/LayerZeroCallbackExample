@@ -1,0 +1,34 @@
+# File system
+.DS_Store
+
+solidity-files-cache.json
+
+out/*.sol
+
+# Node
+node_modules
+
+# Env
+.env
+
+# Eslint
+.eslintcache
+
+# Hardhat
+artifacts
+cache
+
+# Deployment
+**/deployments/localhost/*
+**/deployments/*/failed*
+
+# Solidity coverage
+coverage
+coverage.json
+.coverage*
+
+# Typechain
+typechain-types
+
+# Lerna
+lerna-debug*

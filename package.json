@@ -1,0 +1,68 @@
+{
+    "name": "LayerZeroCallback",
+    "version": "0.1",
+    "description": "LayerZero Callback",
+    "license": "MIT",
+    "directories": {
+      "test": "test"
+    },
+    "scripts": {
+      "prettier": "npx prettier --check **/*.ts **/*.sol",
+      "prettier:fix": "npx prettier --write **/*.ts **/*.sol",
+      "solhint": "solhint './contracts/**/*.sol'",
+      "solhint:fix": "solhint --fix 'contracts/**/*.sol'",
+      "eslint": "eslint --cache ./test/**/*.ts",
+      "eslint:fix": "eslint --cache --fix ./test --ext .ts",
+      "lint": "npm run prettier && npm run solhint && npm run eslint",
+      "clean": "hardhat clean",
+      "compile": "hardhat compile",
+      "coverage": "hardhat coverage",
+      "deploy": "hardhat deploy",
+      "test": "hardhat test --parallel",
+      "verify": "hardhat etherscan-verify",
+      "size-contract": "hardhat size-contracts"
+    },
+    "devDependencies": {
+      "@defi-wonderland/smock": "2.3.4",
+      "@nomicfoundation/hardhat-toolbox": "2.0.0",
+      "@safe-global/safe-core-sdk": "3.3.2",
+      "@safe-global/safe-ethers-adapters": "0.1.0-alpha.16",
+      "@safe-global/safe-ethers-lib": "1.9.2",
+      "@safe-global/safe-service-client": "1.5.2",
+      "@types/chai": "4.3.3",
+      "@types/lodash": "4.14.191",
+      "@types/mocha": "9.1.1",
+      "@types/node": "18.11.18",
+      "@typescript-eslint/eslint-plugin": "5.57.1",
+      "@typescript-eslint/parser": "5.57.1",
+      "compare-versions": "4.1.4",
+      "dotenv": "16.0.3",
+      "eslint": "8.37.0",
+      "eslint-config-bloq": "3.4.0",
+      "eslint-config-prettier": "8.8.0",
+      "eslint-config-standard": "17.0.0",
+      "eslint-plugin-import": "2.27.5",
+      "eslint-plugin-jsdoc": "40.1.1",
+      "eslint-plugin-mocha": "10.1.0",
+      "eslint-plugin-node": "11.1.0",
+      "eslint-plugin-prefer-arrow": "1.2.3",
+      "eslint-plugin-promise": "6.1.1",
+      "eslint-plugin-require-path-exists": "1.1.9",
+      "ethers-multisend": "2.4.0",
+      "hardhat": "2.12.5",
+      "hardhat-contract-sizer": "2.6.1",
+      "hardhat-deploy": "0.11.22",
+      "hardhat-log-remover": "2.0.2",
+      "hardhat-spdx-license-identifier": "2.1.0",
+      "lodash": "4.17.21",
+      "prettier-plugin-solidity": "1.1.1",
+      "sleep-promise": "9.1.0",
+      "solhint": "3.3.7",
+      "solhint-plugin-prettier": "0.0.5"
+    },
+    "engines": {
+      "node": ">=12.0.0",
+      "npm": ">=7.0.0"
+    }
+  }
+  

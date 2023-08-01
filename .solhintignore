@@ -1,0 +1,2 @@
+./contracts/dependencies/**/*.sol
+./contracts/mock/*.sol
