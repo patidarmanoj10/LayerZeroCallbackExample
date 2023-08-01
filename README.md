@@ -1,9 +1,12 @@
-# LayerZeroCallBackExample
+# LayerZero Callback Example
 
-This is POC about how to use Layerzero bridge to send callback cross chain. The PingPong contract send message to destination chain. 
-When destination chain receive message from bridge then it send back acknowledgement to source chain.
-Caller pays the gas cost in native token on source destination. This fee includes the gas cost of source chain, 
-destination chain and callback of source chain.
+## Payload from Chain A to Chain B to Chain A
+
+
+This is POC about how to use Layerzero bridge to send payload and received callback to source chain. The PingPong contract send message to destination chain. 
+When destination chain receive the message from bridge then it send back acknowledgement to source chain.
+Caller pays the gas cost in native token on source chain. This fee includes the gas cost of method execution on source chain, 
+destination chain and callback to source chain.
 
 Tx1: Chain A - Send payload to chain B.
 
